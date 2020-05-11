@@ -1,5 +1,61 @@
 /* nav */
 
 .navbar {
-  margin-bottom: 20px;
+  height: 70px;
+  background-color: transparent !important;
+  border-color: transparent;
+  background-image:none;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+  .logo-image{
+    width: 100px;
+    overflow: hidden;
+  }
+  .dropdown-menu {
+    background-color: black;
+    opacity: .6;
+    .dropdown-item{
+      color:white;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    background-color: black;
+    height: 45px;
+    z-index: 100;
+    .logo-image{
+      width: 60px;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width:990px) {
+  .navbar-nav {
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+}
+.navbar.solid{
+  background-color: black;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+@media (max-width: 450px) {
+  .navbar-nav {
+    background-color: black;
+    border-radius: 5px;
+    padding-left: 10px;
+    .dropdown-menu {
+      background-color: black;
+    }
+  }
+}
+
+.dropdown-menu a:hover {
+  background-color: gray;
+}
+.dropdown:hover .dropdown-menu{
+  display: black;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- A Intro to Coding for Journalists class project -->
 <head>
-  <title>{% block page_title %}Default title{% endblock %}</title>
+  <title>Queen - {% block page_title %}Default title{% endblock %}</title>
   <meta name="description" content="{% block page_description %}Default description{% endblock %}">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +12,8 @@
 <body>
   {% include "_partials/nav.njk" %}
 
+  {% include "_partials/jumbotron.njk" %}
+
   {% block content %}{% endblock %}
 
   {% include "_partials/footer.njk" %}
@@ -20,5 +22,19 @@
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/scripts.js"></script>
+
+  <script> 
+$(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 360) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+  </script>
 </body>
 </html>
