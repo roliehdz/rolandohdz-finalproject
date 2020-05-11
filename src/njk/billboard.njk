@@ -1,0 +1,17 @@
+{% extends '_layouts/base.njk' %}
+{% block page_title %} Billboard {% endblock %}
+{% block description %} Queen's top Billboard hits{% endblock %}
+
+{%block content%}
+<div class="container billboard-container container-fluid">
+  <div class="row justify-content-center">
+    <h1>Top Charts for Queen</h1>
+    <p> With countless singles, albums and EPs, it's hard to pick your favorite Queen anthem; however, with data collected from Billboard, here's a look at some of the top Queen songs of all time.</p>
+  </div>
+  <div class="row justify-content-center">
+  </div>
+    <iframe title="Queen's Billboard Hits" aria-label="Bar Chart" id="datawrapper-chart-dTpVj" src="https://datawrapper.dwcdn.net/dTpVj/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="619"></iframe>
+    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+  </script>"
+  </div>
+  {%endblock%}
