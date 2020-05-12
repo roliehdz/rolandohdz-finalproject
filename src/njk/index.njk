@@ -13,7 +13,7 @@
 </div>
 
 <div class="container-fluid members-container">
-  <h1> Members</h1>
+  <h1> Memberss</h1>
   {% for members in queen.members %}
     <div class="card-members">
       <img class="card-img img-fluid" src="img/members/{{members.imagebw}}" alt="{{members.name}}">
@@ -23,6 +23,7 @@
         </div>
       </div>
     </div>
+    {% endfor %}
 </div>
 
 {%endblock%}
