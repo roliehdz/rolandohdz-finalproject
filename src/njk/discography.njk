@@ -1,0 +1,22 @@
+{%extends '_layouts/base.njk'%}
+{%block page_title%} Discography {%endblock%}
+{%block description%} Queens's Discography {%endblock%}
+
+<div class="container-fluid music-container">
+<h1>Discography</h1>
+<div class="text-muted d-lg-none">*Hover over an album for details.</div>
+  <div class="row justify-content-center">
+  {%for discophray in queen.discography%}
+    <div class="music col-sm-6 col-md-3">
+      <div class="card-music">
+        <img class="card-img img-fluid" src="img/discs/{{discography.image}}" alt="{{discography.title}}">
+        <div class="card-img-overlay">
+          <div class="card-body text-dark">
+            <h5 class="card-body text-dark"> {{discography.title}}</h5>
+            <p class="card-text"> {{discrography.year}} </p>
+          </div>
+        </div>
+      </div>
+  {%endfor%}
+  </div>
+</div>

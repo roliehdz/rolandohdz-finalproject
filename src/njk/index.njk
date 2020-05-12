@@ -5,13 +5,47 @@
 {%block content%}
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-10">
       <h1>This is Queen</h1>
       <p>It was an utterly unexpected rebirth. from the moment Freddie Mercury and the other members of Queen – guitarist Brian May, drummer Roger Taylor and bassist John Deacon – took the stage at London’s Wembley Stadium, on July 13th, 1985, at the historic Live Aid concert, the group captured the day. Mercury began by sitting at the piano, playing Queen’s most famous song, the strange and gorgeous “Bohemian Rhapsody,” with the band storming in behind him in majestic stride, and an audience of 72,000 singing the lyrics from a seemingly deep-rooted memory, as if this was what they had waited for all day.</p>
       <p>Things built from there. Mercury grabbed his sawed-off microphone stand as the band swayed into the rapturous “Radio Ga Ga,” and the crowd responded with a collective gesture, slapping hands overhead and pumping fists as the singer pushed them on with his sonorous roar. Some people found the sight of that multitude acting in spontaneous accord, like a human tide, scary: that much power, all at the beckon of one band and one voice.</p>
       <p><i> Information orignally appeared in <a href="https://www.rollingstone.com/music/music-news/queens-tragic-rhapsody-234996/"> Rolling Stone</a>.</i></p>
-   
-    </div>
   </div>
 </div>
+
+<div class="container-fluid music-container">
+<h1>Discography</h1>
+<div class="text-muted d-lg-none">*Hover over an album for details.</div>
+  <div class="row justify-content-center">
+  {%for discophray in queen.discography%}
+    <div class="music col-sm-6 col-md-3">
+      <div class="card-music">
+        <img class="card-img img-fluid" src="img/discs/{{discography.image}}" alt="{{discography.title}}">
+        <div class="card-img-overlay">
+          <div class="card-body text-dark">
+            <h5 class="card-body text-dark"> {{discography.title}}</h5>
+            <p class="card-text"> {{discrography.year}} </p>
+          </div>
+        </div>
+      </div>
+  {%endfor%}
+  </div>
+</div>
+
+
+
+<div class="container-fluid members-container">
+  <h1> Members</h1>
+  {% for members in queen.members %}
+    <div class="card-members">
+      <img class="card-img img-fluid" src="img/members/{{members.imagebw}}" alt="{{members.name}}">
+      <div class="card-img-overlay">
+        <div class="card-body text-light">
+          <h4 class="card-title"> <a href="{{members.slug}}.html" class="text-light"> {{members.name}} </a> </h5>
+        </div>
+      </div>
+    </div>
+</div>
+
 {%endblock%}
+
+
