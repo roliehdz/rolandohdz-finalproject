@@ -2,7 +2,7 @@
 
 .navbar {
   height: 70px;
-  background-color: transparent !important;
+  background-color: transparent;
   border-color: transparent;
   background-image:none;
   z-index: 100;
@@ -21,7 +21,7 @@
 }
 @media (max-width: 480px) {
   .navbar {
-    background-color: black;
+    background-color: #f9a602 ;
     height: 45px;
     z-index: 100;
     .logo-image{
@@ -38,7 +38,7 @@
   }
 }
 .navbar.solid{
-  background-color: black;
+  background-color: #f9a602;
   transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px grey;
 }

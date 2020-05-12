@@ -12,20 +12,6 @@
   </div>
 </div>
 
-<div class="container-fluid members-container">
-  <h1> Memberss</h1>
-  {% for members in queen.members %}
-    <div class="card-members">
-      <img class="card-img img-fluid" src="img/members/{{members.imagebw}}" alt="{{members.name}}">
-      <div class="card-img-overlay">
-        <div class="card-body text-light">
-          <h4 class="card-title"> <a href="{{members.slug}}.html" class="text-light"> {{members.name}} </a> </h5>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-</div>
-
 {%endblock%}
 
 
