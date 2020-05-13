@@ -1,0 +1,4 @@
+{%extends '_layouts/band.njk'%}
+{%set members = queen.members[0]%}
+{%block page_title%} {{ members.name }} {%endblock%}
+{%block description%}This is {{ members.name }}.{%endblock%}

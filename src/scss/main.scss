@@ -25,7 +25,9 @@
 
 @import "footer";
 
-@import "card";
+@import "band";
+
+@import "discography";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
@@ -39,24 +41,6 @@ body {
   }
 }
 
-.music-container {
-  .music {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 25px;
-    margin-top: 5px;
-    .card-img {
-      width: 100%;
-    }
-    .card-text {
-      font-size: 15px;
-      position: absolute;
-      text-align: center;
-      padding-top: 0px;
-    }
-    .card-title{
-      padding-top: 5px;
-      margin-bottom: 1px;
-    }
-    }
-  }
+.card-img{
+  padding: 15px;
+}
